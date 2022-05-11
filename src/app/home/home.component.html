@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <app-list-products (msgToHome)="productSelected=$event"></app-list-products>
+    </div>
+    <div class="col-md-8">
+      <app-details [productSelected]="productSelected" *ngIf="productSelected" ></app-details>
+    </div>
+  </div>
+  <div class="row">
+    <!-- <app-commander [detailProd]="productSelected"   ></app-commander> -->
+
+  </div>
+</div>

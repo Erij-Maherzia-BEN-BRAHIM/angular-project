@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="card">
+    <div class="row">
+      <img
+        class="col-7 produit"
+        src="../../assets/PALESTINE PACK/{{ productSelected.image }}"
+        alt="photo du produit"
+      />
+
+      <div
+        style="margin-top: 25%; text-align: center"
+        class="col-5"
+      >
+        <h3>Description du produit</h3> 
+        <b>Couleur: </b> <br />{{ productSelected.couleur }} <br />
+        <b>Tailles diponibles: </b> <br />{{ productSelected.taille }} <br />
+        <b>Prix: </b> <br />{{ productSelected.prix }} TND<br />
+        <button class="btn btn-success" (click)="onSelect()">Commander</button>
+        <app-commander *ngIf="show" [detailProd]="productSelected" ></app-commander>
+      </div>
+    </div>
+  </div><br>
+</div>

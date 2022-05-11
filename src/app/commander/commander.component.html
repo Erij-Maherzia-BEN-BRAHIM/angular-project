@@ -1,0 +1,22 @@
+<div class="container">
+  <h3>Choisir la taille</h3>
+<Select name="taille" id="">
+ <option>Veuillez choisir la taille<option>
+ <option value="S">S<option>
+  <option value="M">M<option>
+  <option value="L">L<option>
+  <option value="XL">XL<option>
+  <option value="XXL">XXL<option>
+</Select>  
+  <h3>Choisir la quantité</h3>
+
+  <div class="container" style="display: inline-flex ; ">
+    <button class="col-3"type="button" (click)="minus()"><span>-</span></button>
+    <input  class="col-6" type="text" style="text-align: center;" [value]="quantity" />
+    <button  class="col-3"type="button" (click)="plus()"><span>+</span></button>
+  </div> <br>
+  <br>
+  <button class="btn btn-danger" >Ajouter au panier</button><br>
+
+
+</div> <br>
