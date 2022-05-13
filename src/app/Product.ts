@@ -5,5 +5,6 @@ export interface Product {
     couleur:string;
     image:string;
     motif?:string;
+    prixTotal?:number;
 
   }

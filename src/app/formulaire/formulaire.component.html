@@ -1,0 +1,23 @@
+<div class="container">
+    <form #f="ngForm">
+        <label for="nom">Nom</label>
+        <input ngModel required type="text" class="form-control" id="nom" name="nom">
+
+        <label for="prenom">Prénom</label>
+        <input ngModel required type="text" class="form-control" id="prenom" name="prenom">
+
+        <label for="tel">Numéro de téléphone</label>
+        <input ngModel type="number" class="form-control" id="tel" name="tel">
+<br>
+        <label for="adresse">Adresse de livraison</label>
+        <input ngModel required type="text" class="form-control" id="adresse" name="adresse">
+<br>
+        <select for="">Mode de paiement
+        <option ngModel type="radio" class="form-control" value="CB">Paiement en ligne</option>
+        <option ngModel type="radio" class="form-control" value="CB">Paiement à la livrasion </option></select>
+<br><br>
+        <button class="btn btn-primary">
+            Valider la commande
+        </button>
+    </form>
+</div>

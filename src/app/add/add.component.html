@@ -1,0 +1,15 @@
+<div class="container">
+    <form #f="ngForm" (ngSubmit)="add(f.value)" >
+<h1>Entrer les coordonnées du nouveau produit</h1>
+<label for="image">Url du produit:</label> <br>
+<input  ngModel  type="file" name="image" accept="image/png, image/jpeg"><br>
+<label for="taille">taille</label><br>
+<input  ngModel type="text" name="taille"><br>
+<label for="prix">Prix</label><br>
+<input ngModel  type="text" name="prix"><br>
+<label for="couleur">couleur</label><br>
+<input ngModel  type="text" name="couleur"><br>
+<br>
+<button class="btn btn-success" type="submit">Ajouter le produit</button>
+</form>
+</div>

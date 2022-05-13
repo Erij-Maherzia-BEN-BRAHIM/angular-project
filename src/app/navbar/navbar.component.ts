@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private http : HttpClient) { }
 
   ngOnInit(): void {
+    this.http.get('https://myprint-2556c-default-rtdb.firebaseio.com/products.json').subscribe({next : (res) => {
+      console.log(res);
+      
+    }});
   }
 
 }

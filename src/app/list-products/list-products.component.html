@@ -2,5 +2,5 @@
     <li  *ngFor="let product of products" class="list-group-item" (click)="onSelect(product)" >
  <img src="../../assets/PALESTINE PACK/{{product.image}}" alt="" style="width: 80px; height: 100px;">  T-shirt {{product.couleur}}  coton
 </li>
-</ul>
-
+</ul> <br>
+<button class="btn btn-primary" (click)="addNewProduct()">Ajouter un nouveau produit</button>

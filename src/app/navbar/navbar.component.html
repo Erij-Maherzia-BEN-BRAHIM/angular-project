@@ -1,6 +1,24 @@
 <nav class="navbar navbar-expand-sm navbar-light bg-warning">
-    <a class="navbar-brand" href="#">
-      <img src="./assets/logo-MyPrint.png" id="logo" alt="logo-MyPrint" style="width: 300px"></a>
+  <a class="navbar-brand" href="#">
+    <img src="./assets/logo-MyPrint.png" style="width: 150px" />
+  </a>
 
-  <h2>MyPrint | Boutique de T-shirts personnalisés</h2>
-  </nav>
+  <ul class="navbar-nav">
+    <i class="fa-solid fa-shirt"></i>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['home']" routerLinkActive="active"
+        >Nos Produits</a
+      >
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['panier']" routerLinkActive="active"
+        >Panier</a
+      >
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['contact']" routerLinkActive="active"
+        >Nous contacter</a
+      >
+    </li>
+  </ul>
+</nav>

@@ -8,15 +8,19 @@
       />
 
       <div
-        style="margin-top: 25%; text-align: center"
+        style="margin-top: 15%; text-align: center"
         class="col-5"
       >
         <h3>Description du produit</h3> 
         <b>Couleur: </b> <br />{{ productSelected.couleur }} <br />
         <b>Tailles diponibles: </b> <br />{{ productSelected.taille }} <br />
         <b>Prix: </b> <br />{{ productSelected.prix }} TND<br />
+        <div class="d-flex justify-content-center">
         <button class="btn btn-success" (click)="onSelect()">Commander</button>
-        <app-commander *ngIf="show" [detailProd]="productSelected" ></app-commander>
+       <button [routerLink]="['edit']" class="btn btn-warning">Mettre à jour</button>
+       <button class="btn btn-danger" (click)="deleteProduct(productSelected._id)">Supprimer</button>
+      </div> 
+       <app-commander *ngIf="show" [detailProd]="productSelected" ></app-commander>
       </div>
     </div>
   </div><br>

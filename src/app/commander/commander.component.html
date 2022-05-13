@@ -1,13 +1,13 @@
 <div class="container">
   <h3>Choisir la taille</h3>
-<Select name="taille" id="">
- <option>Veuillez choisir la taille<option>
- <option value="S">S<option>
-  <option value="M">M<option>
-  <option value="L">L<option>
-  <option value="XL">XL<option>
-  <option value="XXL">XXL<option>
-</Select>  
+<select [(ngModel)]="taill" class="form-control" name="taill" id="">
+ <option value="">Veuillez choisir la taille
+ <option value="S">S
+  <option value="M">M
+  <option value="L">L
+  <option value="XL">XL
+  <option value="XXL">XXL
+</select>  
   <h3>Choisir la quantité</h3>
 
   <div class="container" style="display: inline-flex ; ">
@@ -16,7 +16,7 @@
     <button  class="col-3"type="button" (click)="plus()"><span>+</span></button>
   </div> <br>
   <br>
-  <button class="btn btn-danger" >Ajouter au panier</button><br>
+  <button class="btn btn-danger" (click)="ajouterAuPanier()">Ajouter au panier</button><br>
 
 
 </div> <br>

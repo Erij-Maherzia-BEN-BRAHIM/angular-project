@@ -1,0 +1,25 @@
+<div class="container alert alert-info col-md-8">
+    <form class="well form-horizontal">
+<h1>Veuillez entrer les nouvelles coordonnées du produit:</h1>
+<fieldset>
+    <div class="form-group">
+<label class="col-md-4 control-label">Url du produit:</label> 
+<input  [(ngModel)]="editProduct.image"  type="text">
+</div>
+<div class="form-group">
+    <label class="col-md-4 control-label">taille</label>
+<input  [(ngModel)]="editProduct.taille">
+</div>
+
+<div class="form-group">
+    <label class="col-md-4 control-label">Prix</label>
+<input [(ngModel)]="editProduct.prix">
+</div>
+<div class="form-group">
+    <label class="col-md-4 control-label">couleur</label>
+    <input [(ngModel)]="editProduct.couleur">
+</div>
+</fieldset>
+<button (click)="updateProduct()" class="btn btn-success">Valider les changements</button>
+</form>
+</div>
